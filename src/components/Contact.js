@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div>
       <h2>Contact</h2>
-      <p>This is the Contact section.</p>
+      <p>If you'd like to get in touch or learn more about my work, I'd love to hear from you. You can reach me at [Your Email Address].</p>
     </div>
   );
 }
