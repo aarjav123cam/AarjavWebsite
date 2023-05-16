@@ -76,23 +76,55 @@ body {
   }
   
   .header-image {
-    height: auto;  /* Adjust as needed */
-    width: 20%;
+    height: auto;  
+    width: 70%;
     margin-right: 20px;
   }
-  .project-image {
-    float: right;
-    margin: 20px 20px 20px 40px;
-    width: 300px;  /* Adjust as needed */
-    height: auto;
-  }
+
+
   
+  .project-text {
+    text-align: justify;
+  }
+
+  .social-box{
+    display: flex;
+    justify-content: 'space-between';
+    width: 150px;
+  }
+ .social-icon{
+    width: 80px;
+ }
+
   .image-caption {
     text-align: center;
     font-size: 0.8em;
     color: #888;
   }
+
+
+  .project-image-box {
+    margin: -20px 20px 20px 40px;
+    width: 100%;
+  }
   
-  .project-text {
-    text-align: justify;
+  .project-image {
+    display: block;
+    width: 70%;  
+    height: auto;
+    margin: auto auto;
+  }
+
+  @media (min-width: 769px) {
+    .project-image-box {
+      float: right;
+      width: 250px;
+    }
+
+    .project-image {
+      width: 100%;
+    }
+    .header-image {
+        width: 25%;
+      }
   }

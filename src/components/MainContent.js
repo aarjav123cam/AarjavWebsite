@@ -3,6 +3,7 @@ import About from './About';
 import Projects from './Projects';
 import Experience from './Experience';
 import Contact from './Contact';
+import CV from './CV';
 
 function MainContent() {
   const [section, setSection] = useState('about');
@@ -17,6 +18,8 @@ function MainContent() {
         return <Experience />;
       case 'contact':
         return <Contact />;
+      case 'CV':
+        return <CV/>  
       default:
         return <About />;
     }
@@ -28,6 +31,7 @@ function MainContent() {
         <button onClick={() => setSection('about')}>About</button>
         <button onClick={() => setSection('projects')}>Projects</button>
         <button onClick={() => setSection('experience')}>Experience</button>
+        <button onClick={() => setSection('CV')}>CV</button>
         <button onClick={() => setSection('contact')}>Contact</button>
       </nav>
       {renderSection()}
