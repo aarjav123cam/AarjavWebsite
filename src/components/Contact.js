@@ -2,6 +2,7 @@ import React from 'react';
 import linkedinLogo from '../images/linkedin.png';  // adjust the path as needed
 import githubLogo from '../images/github.png'; 
 
+
 function Contact() {
   return (
     <div>
@@ -23,13 +24,3 @@ function Contact() {
 
 export default Contact;
 
-
-{/* <ul>
-<li>
-
-  <a href="https://www.linkedin.com/in/aarjav-jain-459273147" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-</li>
-<li>
-  <a href="https://github.com/aarjav123cam" target="_blank" rel="noopener noreferrer">GitHub</a>
-</li>
-</ul> */}
