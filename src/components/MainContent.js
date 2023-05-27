@@ -4,6 +4,7 @@ import Projects from './Projects';
 import Experience from './Experience';
 import Contact from './Contact';
 import CV from './CV';
+import sparta from '../pdfFolder/sparta.pdf';
 
 function MainContent() {
   const [section, setSection] = useState('about');
@@ -19,7 +20,7 @@ function MainContent() {
       case 'contact':
         return <Contact />;
       case 'CV':
-        return <CV/>  
+        return <CV/> 
       default:
         return <About />;
     }
@@ -33,7 +34,13 @@ function MainContent() {
         <button onClick={() => setSection('experience')}>Experience</button>
         <button onClick={() => setSection('CV')}>CV</button>
         <button onClick={() => setSection('contact')}>Contact</button>
+
+
       </nav>
+      <a href={sparta} target="_blank"
+                    rel="noreferrer">
+                    Open First PDF
+                </a> 
       {renderSection()}
     </main>
   );
