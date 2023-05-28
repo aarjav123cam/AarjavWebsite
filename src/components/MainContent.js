@@ -4,7 +4,6 @@ import Projects from './Projects';
 import Experience from './Experience';
 import Contact from './Contact';
 import CV from './CV';
-import sparta from '../pdfFolder/sparta.pdf';
 
 function MainContent() {
   const [section, setSection] = useState('about');
@@ -37,10 +36,7 @@ function MainContent() {
 
 
       </nav>
-      <a href={sparta} target="_blank"
-                    rel="noreferrer">
-                    Open First PDF
-                </a> 
+
       {renderSection()}
     </main>
   );
