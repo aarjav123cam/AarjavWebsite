@@ -4,9 +4,9 @@ import Projects from './Projects';
 import Experience from './Experience';
 import Contact from './Contact';
 import CV from './CV';
-import sparta from './sparta.pdf';
-import helot_exploit from './helot_exploit.pdf'
-import helot_perioikoi from './helot_perioikoi.pdf'
+// import sparta from './sparta.pdf';
+// import helot_exploit from './helot_exploit.pdf'
+// import helot_perioikoi from './helot_perioikoi.pdf'
 
 function MainContent() {
   const [section, setSection] = useState('about');
@@ -40,7 +40,7 @@ function MainContent() {
         
 
       </nav>
-      <a href={sparta} target="_blank" rel="noopener noreferrer">
+      {/* <a href={sparta} target="_blank" rel="noopener noreferrer">
         <button>Open PDF</button>
       </a>
       <a href={helot_exploit} target="_blank" rel="noopener noreferrer">
@@ -48,7 +48,7 @@ function MainContent() {
       </a>
       <a href={helot_perioikoi} target="_blank" rel="noopener noreferrer">
         <button>Open PDF</button>
-      </a>
+      </a> */}
       {renderSection()}
     </main>
   );
