@@ -12,20 +12,21 @@ function Projects() {
         <img src={connect4} alt="connect 4 board" className="project-image" />
         <figcaption className="image-caption">Connect-4, anyone?</figcaption> 
       </div> */}
-      <p className="project-text">Here are a few projects I've been involved in:</p>
-      <h4>Machine Learning</h4>
+      <p className="project-text">Here are a few personal projects I've worked:</p>
+      <h3>Machine Learning</h3>
       <div className="project-image-box" >
           <img src={torus} alt="torus" className="project-image" />
           <figcaption className="image-caption">Neural network solution of torus under Ricci flow, embedded into &#8477;&#178;. Coloured lines are some solutions to its geodesics.</figcaption> 
         </div>
       
       <ul>  
+        <li> <strong>Generative AI apps: </strong>  I have played around a lot with generative AI, settng up RAG base information retrieval apps, right down to running medium sized open source language models locally (with varying accuracies!). There are many interesting applications of the Agents architecture, something I would love to explore further. A challenge for us developers is to make AI safe, robust and fair, and using Guardrails is a useful start. </li>
         <li><strong>ML solutions to Ricci Flow on real metrics:</strong> Using physics-informed neural networks to investigate metric solutions to the geometry problem of Ricci Flow: a curvature-based PDE on metrics which helped prove the famous Poincaré conjecture. Created embeddings of the solutions, and subsequent visualisations. Accepted by a NeurIPS workshop in 2023 and the full paper can be found on <a href="https://arxiv.org/abs/2212.05892">Arxiv</a>.   </li>
         <li><strong>Drift Detection in ML models:</strong> Investigating the issue of concept and data drift-an important issue to diagnose in production ML models. Trained a toy MNIST CNN model and simulated drift using various noise additions to calculate statistical deviations from which one can create automatic model retraining thresholds. This can help ensure an accurate production model.</li>
         <li><strong>Transformer Stock Price Prediction Model:</strong> Investigated the efficacy of transformer models for stock price prediction. By creating sequences of price data, created trading signals for various stock tickers, with mild success. </li>
       </ul>
 
-      <h4>Software Engineering</h4>
+      <h3>Software Engineering</h3>
       <div className="project-image-box" >
           <img src={connect4} alt="connect 4 board" className="project-image" />
           <figcaption className="image-caption">Connect-4, anyone?</figcaption> 
@@ -37,7 +38,7 @@ function Projects() {
         <li><strong>Full-stack task list project in Java and React:</strong></li>
       </ul>
 
-      <h4>Physics</h4>
+      <h3>Physics</h3>
       <ul>  
 
       <li><strong>Modelling n-body Orbit:</strong> Wrote a Python script to model n-body orbit using numerical integration, testing solution stability and sensitivity to initial conditions.</li>
